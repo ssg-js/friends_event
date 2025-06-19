@@ -5,6 +5,7 @@ interface Props {
   content: string;
   height?: number;
   width?: number;
+  padding?: string;
   backgroundColor?: string;
   color?: string;
   fontSize?: number;
@@ -16,6 +17,7 @@ export default function Button({
   content,
   height,
   width,
+  padding,
   backgroundColor = "transparent",
   color,
   fontSize,
@@ -27,6 +29,7 @@ export default function Button({
       css={{
         width,
         height,
+        padding,
         backgroundColor,
         color,
         fontSize: `${fontSize}px`,

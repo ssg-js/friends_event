@@ -1,5 +1,8 @@
 export const TossPrimary = "#0064FF";
-export const TossDarkBackground = "##19181c";
-export const TossGray = "#202632";
+export const TossDarkBackground = "#19181c";
+export const TossDarkGray = "#212129";
+export const TossGray = "#535966";
 export const TossWhiteBlue = "#567de8";
+export const TossGrayFont = "#929298";
+export const TossWhiteFont = "#cacaca";
 export const TossBlackFont = "#201f23";

@@ -24,11 +24,18 @@ function Event() {
       <Header
         title=""
         leftChild={
-          <Button content="<" color="white" fontSize={15} onClick={() => {}} />
+          <Button
+            content="〈"
+            padding="1px 0px"
+            color="white"
+            fontSize={15}
+            onClick={() => {}}
+          />
         }
         rightChild={
           <Button
             content="안내"
+            padding="1px 0px"
             color="white"
             fontSize={12}
             onClick={() => nav("/explain")}

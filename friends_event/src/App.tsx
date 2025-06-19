@@ -6,6 +6,7 @@ import Explain from "./pages/Explain";
 import End from "./pages/End";
 import NotFound from "./pages/NotFound";
 import Game from "./pages/Game";
+import Rank from "./pages/Rank";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Event />} />
         <Route path="/game" element={<Game />} />
+        <Route path="/rank" element={<Rank />} />
         <Route path="/explain" element={<Explain />} />
         <Route path="/end" element={<End />} />
         <Route path="*" element={<NotFound />} />

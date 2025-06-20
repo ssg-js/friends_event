@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 
 import { useNavigate } from "react-router-dom";
-import { TossDarkGray, TossGray, TossWhiteFont } from "../constants/colors";
+import { TossDarkGray, TossGray, TossSemiWhiteFont } from "../constants/colors";
 
 interface Props {}
 
@@ -23,7 +23,7 @@ export default function Ranking({}: Props) {
       onClick={() => nav("/rank")}
     >
       <div>🏆</div>
-      <div css={{ flex: 1, color: TossWhiteFont }}>친구들 중 1등이에요</div>
+      <div css={{ flex: 1, color: TossSemiWhiteFont }}>친구들 중 1등이에요</div>
       <div
         css={{
           padding: "3px 7px",

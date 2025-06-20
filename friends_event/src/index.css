@@ -10,7 +10,7 @@ body {
   height: 550px;
   margin: 10px auto;
   background-color: #19181c;
-  color: white;
+  color: rgb(235, 235, 235);
   font-size: 12px;
   box-sizing: border-box;
 }

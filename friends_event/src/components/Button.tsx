@@ -23,7 +23,7 @@ export default function Button({
   color,
   fontSize,
   fontWeight,
-  borderRadius = 14,
+  borderRadius = 11,
   onClick,
 }: Props) {
   return (

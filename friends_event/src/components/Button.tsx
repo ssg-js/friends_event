@@ -9,6 +9,7 @@ interface Props {
   backgroundColor?: string;
   color?: string;
   fontSize?: number;
+  fontWeight?: number;
   borderRadius?: number;
   onClick: MouseEventHandler<HTMLButtonElement>;
 }
@@ -21,6 +22,7 @@ export default function Button({
   backgroundColor = "transparent",
   color,
   fontSize,
+  fontWeight,
   borderRadius = 14,
   onClick,
 }: Props) {
@@ -33,6 +35,7 @@ export default function Button({
         backgroundColor,
         color,
         fontSize: `${fontSize}px`,
+        fontWeight,
         border: "none",
         borderRadius,
       }}

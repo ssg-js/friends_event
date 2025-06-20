@@ -6,3 +6,4 @@ export const TossWhiteBlue = "#567de8";
 export const TossGrayFont = "#929298";
 export const TossWhiteFont = "#cacaca";
 export const TossBlackFont = "#201f23";
+export const TossDarkBlueFont = "#557dff";

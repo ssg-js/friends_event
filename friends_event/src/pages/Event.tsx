@@ -29,6 +29,7 @@ function Event() {
             padding="1px 0px"
             color="white"
             fontSize={15}
+            fontWeight={900}
             onClick={() => {}}
           />
         }

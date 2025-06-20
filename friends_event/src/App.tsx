@@ -12,7 +12,7 @@ function App() {
   return (
     <div
       css={{
-        padding: "10px 14px",
+        padding: "45px 14px 25px 14px",
         height: "100%",
         boxSizing: "border-box",
       }}

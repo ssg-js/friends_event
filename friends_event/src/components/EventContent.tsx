@@ -8,7 +8,7 @@ interface Props {
   eventId?: number;
 }
 
-export default function Content({ content, eventId }: Props) {
+export default function EventContent({ content, eventId }: Props) {
   return (
     <div
       css={{

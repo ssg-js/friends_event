@@ -1,14 +1,16 @@
 /** @jsxImportSource @emotion/react */
 
-import Header from "../components/Header";
 import Button from "../components/Button";
 import EventContent from "../components/EventContent";
-
 import { useNavigate } from "react-router-dom";
 import { TossWhiteBlue } from "../constants/colors";
+import Header from "../components/Header";
+import { useState } from "react";
+import InformationModal from "../components/InformationModal";
 
 function Event() {
   const nav = useNavigate();
+  const [informationModalState, setInformationModalState] = useState(false);
 
   return (
     <div
@@ -37,10 +39,11 @@ function Event() {
             padding="1px 0px"
             color="white"
             fontSize={12}
-            onClick={() => nav("/explain")}
+            onClick={() => setInformationModalState(true)}
           />
         }
       />
+      {informationModalState && <InformationModal />}
       <EventContent content="지금부터 게임 시작" />
 
       <Button

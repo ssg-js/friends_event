@@ -15,6 +15,7 @@ function Event() {
   return (
     <div
       css={{
+        position: "relative",
         display: "flex",
         height: "100%",
         flexDirection: "column",
@@ -43,17 +44,18 @@ function Event() {
           />
         }
       />
-      {informationModalState && <InformationModal />}
       <EventContent content="지금부터 게임 시작" />
 
       <Button
         content={"동그라미 그리기"}
+        margin="0px 14px"
         height={42}
         backgroundColor={TossWhiteBlue}
         color="white"
         fontWeight={340}
         onClick={() => nav("/game")}
       />
+      {informationModalState && <InformationModal />}
     </div>
   );
 }

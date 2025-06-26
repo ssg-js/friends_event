@@ -3,20 +3,48 @@
 import type { JSX } from "@emotion/react/jsx-runtime";
 import { TossDarkGray, TossSemiWhiteFont } from "../constants/colors";
 import InformationItem from "./InformatinoItem";
+import Header from "./Header";
+import Button from "./Button";
 
 export default function InformationModal() {
   return (
     <div
       css={{
         position: "absolute",
-        left: "0px",
+        left: 0,
+        bottom: 0,
 
         height: "100%",
         width: "100%",
+        display: "flex",
+        flexDirection: "column",
 
         backgroundColor: "rgb(0, 0, 0, 0.5)",
       }}
     >
+      <Header
+        title=""
+        leftChild={
+          <Button
+            content="〈"
+            padding="1px 0px"
+            color="white"
+            fontSize={15}
+            fontWeight={900}
+            onClick={() => {}}
+          />
+        }
+        rightChild={
+          <Button
+            content="안내"
+            margin="0px 14px"
+            padding="1px 0px"
+            color="white"
+            fontSize={12}
+            onClick={() => setInformationModalState(true)}
+          />
+        }
+      />
       <div
         css={{
           display: "flex",
@@ -26,6 +54,7 @@ export default function InformationModal() {
           padding: "17px 17px",
           backgroundColor: TossDarkGray,
           color: TossSemiWhiteFont,
+          borderRadius: 20,
         }}
       >
         <p>안내</p>

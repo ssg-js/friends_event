@@ -44,18 +44,10 @@ function Event() {
           />
         }
       />
-      <EventContent content="지금부터 게임 시작" />
-
-      <Button
-        content={"동그라미 그리기"}
-        margin="0px 14px"
-        height={42}
-        backgroundColor={TossWhiteBlue}
-        color="white"
-        fontWeight={340}
-        onClick={() => nav("/game")}
+      <EventContent
+        content="지금부터 게임 시작"
+        informationModalState={informationModalState}
       />
-      {informationModalState && <InformationModal />}
     </div>
   );
 }

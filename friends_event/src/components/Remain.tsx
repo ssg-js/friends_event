@@ -7,7 +7,7 @@ export default function Remain() {
   return (
     <div
       css={{
-        margin: "15px",
+        margin: "25px",
         display: "flex",
         justifyContent: "center",
         gap: "4px",

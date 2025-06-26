@@ -12,7 +12,7 @@ function App() {
     <div
       css={{
         position: "relative",
-        padding: "45px 0px 25px 0px",
+        padding: "40px 0px 25px 0px",
         height: "100%",
         boxSizing: "border-box",
         display: "flex",

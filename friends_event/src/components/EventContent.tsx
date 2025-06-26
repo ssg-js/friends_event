@@ -32,8 +32,19 @@ export default function EventContent({
       }}
     >
       <Ranking />
-      <div css={{ margin: "0 auto" }}>{content}</div>
-      <img src={""} />
+      <div
+        css={{
+          margin: "0 auto",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          flex: 1,
+        }}
+      >
+        {content}
+        <img src={""} />
+      </div>
+
       <Remain />
       <Button
         content={"동그라미 그리기"}

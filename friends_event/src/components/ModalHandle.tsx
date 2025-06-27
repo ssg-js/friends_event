@@ -6,7 +6,7 @@ interface ModalHandleProps {
   height?: number;
 }
 
-export default function ModalHandle({ height = 13 }: ModalHandleProps) {
+export default function ModalHandle({ height = 22 }: ModalHandleProps) {
   return (
     <div
       css={{
@@ -19,8 +19,8 @@ export default function ModalHandle({ height = 13 }: ModalHandleProps) {
     >
       <div
         css={{
-          height: 3,
-          width: 35,
+          height: 2.5,
+          width: 38,
           borderRadius: 3,
           backgroundColor: TossGray,
         }}

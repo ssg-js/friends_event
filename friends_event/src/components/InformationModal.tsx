@@ -1,10 +1,16 @@
 /** @jsxImportSource @emotion/react */
 
 import type { JSX } from "@emotion/react/jsx-runtime";
-import { TossDarkGray, TossSemiWhiteFont } from "../constants/colors";
+import {
+  TossDarkGray,
+  TossDarkWidthOpacity20Background,
+  TossDarkWidthOpacity50Background,
+  TossGrayFont,
+  TossWhiteBlue,
+} from "../constants/colors";
 import InformationItem from "./InformatinoItem";
-import Header from "./Header";
 import Button from "./Button";
+import ModalHandle from "./ModalHandle";
 
 export default function InformationModal() {
   return (
@@ -18,47 +24,68 @@ export default function InformationModal() {
         width: "100%",
         display: "flex",
         flexDirection: "column",
+        justifyContent: "end",
 
-        backgroundColor: "rgb(0, 0, 0, 0.5)",
+        backgroundColor: TossDarkWidthOpacity50Background,
       }}
     >
-      <Header
-        title=""
-        leftChild={
-          <Button
-            content="〈"
-            padding="1px 0px"
-            color="white"
-            fontSize={15}
-            fontWeight={900}
-            onClick={() => {}}
-          />
-        }
-        rightChild={
-          <Button
-            content="안내"
-            margin="0px 14px"
-            padding="1px 0px"
-            color="white"
-            fontSize={12}
-            onClick={() => setInformationModalState(true)}
-          />
-        }
-      />
       <div
         css={{
+          flex: 1,
+          margin: "7px",
+          maxHeight: "70%",
           display: "flex",
           flexDirection: "column",
-          gap: "7px",
-          margin: "7px",
-          padding: "17px 17px",
           backgroundColor: TossDarkGray,
-          color: TossSemiWhiteFont,
+          color: TossGrayFont,
           borderRadius: 20,
         }}
       >
-        <p>안내</p>
-        {renderInformationItems(0, informationData)}
+        <ModalHandle />
+        <div
+          css={{
+            userSelect: "none",
+            margin: "0px 3px",
+            padding: "0px 17px",
+            display: "flex",
+            flexDirection: "column",
+            gap: "7px",
+            overflowY: "auto",
+            "::-webkit-scrollbar": {
+              width: "2px",
+            },
+            "::-webkit-scrollbar-thumb": {
+              borderRadius: "4px",
+              background: TossGrayFont,
+            },
+            "::-webkit-scrollbar-track": {
+              background: "transparent",
+            },
+          }}
+        >
+          <p>안내</p>
+          {renderInformationItems(0, informationData)}
+        </div>
+        <div
+          css={{
+            flexShrink: 0,
+            height: 70,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            backgroundColor: TossDarkWidthOpacity20Background,
+          }}
+        >
+          <Button
+            content={"확인"}
+            margin="0px 14px"
+            height={42}
+            backgroundColor={TossWhiteBlue}
+            color="white"
+            fontWeight={340}
+            onClick={() => {}}
+          />
+        </div>
       </div>
     </div>
   );
@@ -77,7 +104,6 @@ function renderInformationItems(
   const node = data[nodeIndex];
   const baseTabWidth = 17;
   const width = baseTabWidth * depth;
-  console.log(nodeIndex, width);
 
   return [
     <InformationItem key={nodeIndex} content={node.content} width={width} />,

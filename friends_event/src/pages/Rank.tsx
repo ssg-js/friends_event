@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import Header from "../components/Header";
 import RankContent from "../components/RankContent";
-import { TossWhiteBlue } from "../constants/colors";
 
 export default function Rank() {
   const nav = useNavigate();

@@ -29,14 +29,6 @@ export default function Rank() {
         }
       />
       <RankContent />
-      <Button
-        content={"도전장 보내기"}
-        height={42}
-        backgroundColor={TossWhiteBlue}
-        color="white"
-        fontWeight={340}
-        onClick={() => {}}
-      />{" "}
     </div>
   );
 }

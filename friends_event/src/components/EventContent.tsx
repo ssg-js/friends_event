@@ -23,7 +23,6 @@ export default function EventContent({
     <div
       css={{
         position: "relative",
-        padding: "10px 0",
         display: "flex",
         flexDirection: "column",
         alignItems: "stretch",

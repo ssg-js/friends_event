@@ -10,7 +10,7 @@ export default function Ranking({}: Props) {
   return (
     <div
       css={{
-        margin: "0px 14px",
+        margin: "10px 14px",
         height: "37px",
         padding: "0 14px",
         display: "flex",

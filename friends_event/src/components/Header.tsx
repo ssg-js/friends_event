@@ -11,8 +11,10 @@ export default function Header({ title, leftChild, rightChild }: Props) {
   return (
     <div
       css={{
+        padding: "0px 14px",
         display: "flex",
         justifyContent: "space-between",
+        alignItems: "center",
         height: 30,
       }}
     >

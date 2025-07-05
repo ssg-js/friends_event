@@ -1,18 +1,17 @@
 /** @jsxImportSource @emotion/react */
 
-import Header from "../components/Header";
 import Button from "../components/Button";
 import EventContent from "../components/EventContent";
-
-import { useNavigate } from "react-router-dom";
-import { TossWhiteBlue } from "../constants/colors";
+import Header from "../components/Header";
+import { useState } from "react";
 
 function Event() {
-  const nav = useNavigate();
+  const [informationModalState, setInformationModalState] = useState(false);
 
   return (
     <div
       css={{
+        position: "relative",
         display: "flex",
         height: "100%",
         flexDirection: "column",
@@ -37,19 +36,13 @@ function Event() {
             padding="1px 0px"
             color="white"
             fontSize={12}
-            onClick={() => nav("/explain")}
+            onClick={() => setInformationModalState(true)}
           />
         }
       />
-      <EventContent content="지금부터 게임 시작" />
-
-      <Button
-        content={"동그라미 그리기"}
-        height={42}
-        backgroundColor={TossWhiteBlue}
-        color="white"
-        fontWeight={340}
-        onClick={() => nav("/game")}
+      <EventContent
+        content="지금부터 게임 시작"
+        informationModalState={informationModalState}
       />
     </div>
   );

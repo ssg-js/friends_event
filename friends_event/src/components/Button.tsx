@@ -3,6 +3,7 @@ import type { MouseEventHandler } from "react";
 
 interface Props {
   content: string;
+  margin?: string;
   height?: number;
   width?: number;
   padding?: string;
@@ -16,6 +17,7 @@ interface Props {
 
 export default function Button({
   content,
+  margin,
   height,
   width,
   padding,
@@ -29,6 +31,7 @@ export default function Button({
   return (
     <button
       css={{
+        margin,
         width,
         height,
         padding,

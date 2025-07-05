@@ -1,5 +1,9 @@
 export const TossPrimary = "#0064FF";
 export const TossDarkBackground = "#19181c";
+export const TossDarkWidthOpacity50Background = "rgb(0, 0, 0, 0.5)";
+export const TossDarkWidthOpacity40Background = "rgb(0, 0, 0, 0.4)";
+export const TossDarkWidthOpacity30Background = "rgb(0, 0, 0, 0.3)";
+export const TossDarkWidthOpacity20Background = "rgb(0, 0, 0, 0.2)";
 export const TossDarkGray = "#212129";
 export const TossGray = "#535966";
 export const TossWhiteBlue = "#567de8";
